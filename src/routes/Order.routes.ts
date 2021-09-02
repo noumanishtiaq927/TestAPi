@@ -62,7 +62,7 @@ export class OrderRoutes {
        
             
         })
-        this.router.post('/singleorderbill',apikeyauth, async(req,res,next)=>{
+        this.router.post('/singleorderbill', async(req,res,next)=>{
             try {
                 const getreq:GetReqOrder = req.body
                 const singleorderbill:SaveUpdateResOrder = await new OrderController().getorder(getreq)
